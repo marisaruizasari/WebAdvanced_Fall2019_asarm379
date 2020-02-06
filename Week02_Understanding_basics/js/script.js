@@ -1,22 +1,24 @@
 /* global D3 */
 
+// empty object to hold question selection values
 let response = {
     gender: '',
     race: '',
     age: ''
 };
 
+// load data and call functions once loaded
 d3.csv("data/data.csv").then(data => {
 
     console.log(data);
 
-    console.log()
-
+    // on the last question, select the correct data for the results, and display on the final page
     $(".step3 .answer").click(function(){
         d = selectDataPoint(data, response.gender, response.race, response.age);
 
         let race;
 
+        //reformat the names for races/ethnicities 
         switch(response.race) {
             case ('native'):
               race = 'Native American'
@@ -44,6 +46,7 @@ d3.csv("data/data.csv").then(data => {
     
 });
 
+// select the data point for the answer
 selectDataPoint = (data, gender, race, age) => {
     let match;
     data.forEach(item => {
@@ -59,29 +62,33 @@ selectDataPoint = (data, gender, race, age) => {
     return match;
 };
 
+// variables to refer to each step in the quiz
 let intro = $(".intro");
 let step1 = $(".step1");
 let step2 = $(".step2");
 let step3 = $(".step3");
 let step4 = $(".step4");
 
-// let step3Buttons = $(".step3 .answer");
-// console.log(step3Buttons);
 
+// variable to refer to body (to change color)
 let background = document.querySelector('body');
+
+// variables to refer to each SVG element
 let moneySVG = document.querySelector('#money');
 let sexSVG = document.querySelector('#sex');
 let raceSVG = document.querySelector('#race');
 let ageSVG = document.querySelector('#age');
 let usdSVG = document.querySelector('#us-dollar');
 
-
+// click event listener for the start button
 let start = $("button[value='start']").click(function(){
     console.log("start clicked!")
 
+    // change the active state from the first step to the second step
     intro.removeClass('active');
     step1.addClass('active');
 
+    // using anime js to move the svg elements 
     anime({
         targets: '#money',
         keyframes: [
@@ -98,7 +105,7 @@ let start = $("button[value='start']").click(function(){
     
   });
 
-
+// click event listener for the gender selection buttons
 let genderButtons = $(".gender").click(function(){
     let val = this.value
     console.log(`${val} clicked!`)
@@ -117,6 +124,7 @@ let genderButtons = $(".gender").click(function(){
 
 });
 
+// click event listener for the race selection buttons
 let raceButtons = $(".race").click(function(){
     let val = this.value
     console.log(`${val} clicked!`)
@@ -135,6 +143,7 @@ let raceButtons = $(".race").click(function(){
 
 });
 
+// click event listener for the race selection buttons
 let ageButtons = $(".age").click(function(){
     let val = this.value
     console.log(`${val} clicked!`)
@@ -157,10 +166,12 @@ let ageButtons = $(".age").click(function(){
 
 });
   
+// click event listener for the start again button
 let startOver = $("button[value='start-over']").click(function(){
     step4.removeClass('active');
     step1.addClass('active');
 
+    // reset styles and view back to step 1
     background.style.backgroundColor = 'rgb(56, 66, 55)';
 
     usdSVG.style.display = 'none';
