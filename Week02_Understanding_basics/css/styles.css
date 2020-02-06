@@ -1,0 +1,79 @@
+body {
+   background-color: rgb(56, 66, 55); 
+   padding: 15%;
+   padding-top: 200px;
+}
+
+.divider {
+height: 2px;
+width: 100%;
+background-color: white;
+}
+
+.title {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.text {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.text, .question, .result {
+    font-family: 'Abel', sans-serif;
+    color: white;
+}
+
+.question {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
+
+button {
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.test1 {
+    color: white;
+}
+
+#money {
+    fill: white;
+    width: 8%;
+    position: absolute;
+    top: 90px;
+    left: 15%;
+}
+
+#sex, #race, #age, #us-dollar {
+    display: none;
+    fill: white;
+    width: 5%;
+    position: absolute;
+    top: 200px;
+    left: 45vw;
+}
+
+.result {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
