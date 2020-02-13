@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Peace - NCA</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Montserrat:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    
+    
+    <main>
+        <div class="spacer-h-m"></div>
+
+        <h1 class="title2 c-blue dmserif">Advance Peace</h1>
+        <div class="flexrow space-between">
+            <p class="userEmail"></p> 
+            <a class='sign-out-btn' href="index.html">Sign Out</a>
+        </div>
+        <div id="user-icon" class="userIcon"></div>
+        <div class="spacer-h-s"></div>
+    </main>
+
+    <div class="top-bar">
+        <div class="textcentered">NCA Home</div>
+    </div>
+    
+    <main class="b-grey pd-top-m min-h-600">
+        <div class="centered">
+            <div class="max-350 width-100">
+                <div class="flexrow nowrap mg-tb-s c-yellow">
+                    <i class="fas fa-exclamation-circle home-page-icon"></i>
+                    <h3 class="body-text">Next entry due: </h3>
+                </div>
+                
+                <div class="flexrow nowrap mg-tb-s c-dgrey">
+                    <i class="fas fa-clock home-page-icon"></i>
+                    <h3 class="body-text">Last entry date: </h3>
+                </div>
+
+                <div class="alert alert-primary" role="alert">
+                    4 fellow intake forms to complete
+                  </div>
+                
+                <div class="width-100">
+                    <div class="centered home-opt-div">
+                        <i class="fas fa-pen"></i>
+                        <a href="nca-new-entry.html" class="home-page-option">New Entry</a> 
+                    </div>
+                    <div class="centered home-opt-div">
+                        <i class="fas fa-list"></i>
+                        <a href="" class="home-page-option">View Fellows</a> 
+                    </div>
+                    <div class="centered home-opt-div">
+                        <i class="fas fa-map-signs"></i>
+                        <a href="" class="home-page-option">Update a life map</a> 
+                    </div>
+                </div>
+
+                <div id="data-request"></div> 
+            </div>
+        </div>
+    </main>
+    
+    <!-- dependencies -->
+    <script src="https://kit.fontawesome.com/0145313c67.js" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/configs/jwt-decode.min.js"></script>
+    <script src="js/configs/config.js"></script>
+    <script src="js/configs/cognito-auth.js"></script>
+    <!-- scripts -->
+    <script src="js/master.js"></script>
+    <script src="js/nca-home.js"></script>
+</body>
+</html>

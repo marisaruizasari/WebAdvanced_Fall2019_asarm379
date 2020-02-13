@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Peace - NCA</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Montserrat:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/new-fellow.css">
+</head>
+<body>
+    
+    <main>
+        <div class="spacer-h-m"></div>
+
+        <h1 class="title2 c-blue dmserif">Advance Peace</h1>
+        <div class="flexrow space-between">
+            <p class="userEmail"></p> 
+            <a class='sign-out-btn' href="index.html">Sign Out</a>
+        </div>
+        <div id="user-icon" class="userIcon"></div>
+        <div class="spacer-h-s"></div>
+    </main>
+    
+    <main class="centered b-grey">
+        <div class="max-650">
+            <div class="spacer-h-m"></div>
+
+            <h4 class="textcentered">Onboard New Fellow</h4>
+            <div class="spacer-h-m"></div>
+
+            <form id="new-fellow">
+
+                <div id="program-info" class="form-component">
+                    <div class="textcentered mg-b-s upcase"><strong>Program Information</strong></div> 
+                    <label for="city-assigned">AP City</label>
+
+                    <select class="custom-select" id="city-assigned">
+                        <option value="NCAs">Sacramento</option>
+                        <option value="AP_Admin">Stockton</option>
+                        <option value="Eval_Team">Fresno</option>
+                    </select>
+
+                    <label for="neighborhood-assigned">AP Zone</label>
+
+                    <select class="custom-select" id="neighborhood-assigned">
+                        <option value="NCAs">Neighborhood 1</option>
+                        <option value="AP_Admin">Neighborhood 2</option>
+                        <option value="Eval_Team">Neighborhood 3</option>
+                        <option value="Fellows">Neighborhood 4</option>
+                    </select>
+
+                    <label for="NCA-assigned">Assigned NCA</label>
+
+                    <select class="custom-select" id="NCA-assigned">
+                        <option value="NCAs">NCA 1</option>
+                        <option value="AP_Admin">NCA 2</option>
+                        <option value="Eval_Team">NCA 3</option>
+                        <option value="Fellows">NCA 4</option>
+                    </select>
+                </div>
+                
+                <div id="fellow-info" class="form-component">
+                    <div class="textcentered mg-b-s upcase"><strong>Personal Information</strong></div>
+
+                    <div class="centered">
+                        <div class="input-icon">
+                            <input type="text" id="firstNameInputRegister" placeholder="First Name" required>
+                            <i class='fas fa-user-circle'></i>
+                        </div>
+                        
+                        <div class="input-icon">
+                            <input type="text" id="lastNameInputRegister" placeholder="Last Name" required>
+                            <i class='fas fa-user-circle'></i>
+                        </div>
+        
+                        <div class="input-icon">
+                            <input type="date" id="DOB" placeholder="Date of Birth" required>
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                    </div>
+    
+                    <label for="race">Race:</label>
+    
+                    <select class="custom-select" id="race">
+                        <option value="NCAs">Black</option>
+                        <option value="AP_Admin">White</option>
+                        <option value="Eval_Team">Asian</option>
+                        <option value="Fellows">Native American</option>
+                    </select>
+    
+                    <label for="Ethnicity">Ethnicity:</label>
+    
+                    <select class="custom-select" id="ethnicity">
+                        <option value="NCAs">Hispanic/Latino</option>
+                    </select>
+                </div>
+
+                <div id="intake-info" class="form-component">
+                    <div class="textcentered mg-b-s upcase"><strong>Intake Information</strong></div>
+
+                    <div class="flexrow space-between max-300 mg-b-s">
+                        <label for="gun-injury-count">Prior gun injuries (count)</label>
+                        <input class="num textcentered" id= "gun-injury-count" type="number" placeholder="#">
+                    </div>
+                    
+                    <div class="flexrow space-between max-300 mg-b-s">
+                        <label for="arrests-count">Prior gun arrests (count)</label>
+                        <input class="num textcentered" id="arrests-count" type="number" placeholder="#">
+                    </div>
+                    
+                    <div class="form-sub-section-header"><strong>Check all of the following that apply for the fellow:</strong></div>
+                    <div class="form-sub-section-header">Economic, Social, and Education</div>
+                    <div class="division-line"></div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="parent">    
+                        <label for="parent">Is a parent</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="employed">    
+                        <label for="employed">Currently employed</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="school">    
+                        <label for="school">Currently in School</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="suspension">    
+                        <label for="suspension">Ever suspended from school</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="diploma">    
+                        <label for="diploma">Has high school diploma or GED</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="foster">    
+                        <label for="foster">Has been in the foster care system</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="homeless">    
+                        <label for="homeless">Has ever been homeless</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="shelter">    
+                        <label for="shelter">Has ever lived in a shelter</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="food-stamps">    
+                        <label for="food-stamps">Has been a food stamp recipient</label>
+                    </div>
+
+
+                    <div class="form-sub-section-header">Criminal Justice Sytem</div>
+                    <div class="division-line"></div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="CYA">    
+                        <label for="CYA">CYA Juvenile Detention</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="jail-time">    
+                        <label for="jail-time">Has done jail time</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="parole">    
+                        <label for="parole">Currently on Parole</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="probation">    
+                        <label for="probation">Currently on Probation</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="parent-incarc">    
+                        <label for="parent-incarc">Has a parent that was ever incarcerated</label>
+                    </div>
+
+                   
+                    <div class="form-sub-section-header">Gun Violence</div>
+                    <div class="division-line"></div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="shot-at">    
+                        <label for="shot-at">Has ever been shot at</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="witness-homicde">    
+                        <label for="witness-homicide">Has witnessed a gun homicide</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="assaulted">    
+                        <label for="assaulted">Has ever been physically assaulted</label>
+                    </div>
+
+                    <div class="flexrow">
+                        <input type="checkbox" id="fam-gun-hom">    
+                        <label for="fam-gun-hom">Family member has been the victim of a gun homicide</label>
+                    </div>
+
+                </div>
+                
+                <div class="centered">
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+                
+                <div class="spacer-h-m"></div>
+
+            </form>
+        </div>
+    </main>
+    
+    <!-- dependencies -->
+    <script src="https://kit.fontawesome.com/0145313c67.js" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/configs/jwt-decode.min.js"></script>
+    <script src="js/configs/config.js"></script>
+    <script src="js/configs/cognito-auth.js"></script>
+    <!-- scripts -->
+    <script src="js/master.js"></script>
+    <script src="js/new-fellow.js"></script>
+</body>
+</html>

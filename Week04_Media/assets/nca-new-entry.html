@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Peace - NCA</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Montserrat:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    
+    <main>
+        <div class="spacer-h-m"></div>
+        <h1 class="title2 c-blue dmserif">Advance Peace</h1>
+        <div class="flexrow space-between">
+            <p class="userEmail"></p>
+            <a class='sign-out-btn' href="index.html">Sign Out</a>
+        </div>  
+        <div id="user-icon" class="userIcon"></div>
+        <div class="spacer-h-s"></div>
+    </main>
+
+    <main class="c-dgrey b-dgrey centered min-h-600">
+        <div class="spacer-h-m"></div>
+        <h4 class="c-black">New Weekly Entry</h4>
+        <div class="spacer-h-m"></div>
+        <form id="nca-entry">
+            <div class="flexrow">
+                <i class="fas fa-calendar-week c-blue"></i>
+                <h5>Entry Period</h5>
+            </div>
+            <div class="spacer-h-s"></div>
+            <label for="entryStartDate">Entry Start Date</label>
+            <input type="date" id="entryStartDate" name="entry_start" placeholder="Start Date" required>
+            <div class="spacer-h-s"></div>
+            <label for="entryEndDate">Entry End Date</label>
+            <input type="date" id="entryEndDate" name="entry_end" placeholder="End Date" required>
+            
+            <div class="spacer-h-m"></div>
+
+            <div class="centered">
+                <a href="nca-entry-content.html" type="submit">Next</a>
+            </div>
+
+            <div class="spacer-h-m"></div>
+            
+        </form>
+    </main>
+    
+    <!-- dependencies -->
+    <script src="https://kit.fontawesome.com/0145313c67.js" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/configs/jwt-decode.min.js"></script>
+    <script src="js/configs/config.js"></script>
+    <script src="js/configs/cognito-auth.js"></script>
+    <!-- scripts -->
+    <script src="js/master.js"></script>
+    <script src="js/nca-new-entry.js"></script>
+</body>
+</html>

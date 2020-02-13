@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Peace - Sign In</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Montserrat:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    
+    <div class="svg">
+        <svg class="svg" id="one" data-name="one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.09 170.06"><defs><style>.cls-1{fill:#f8b339;opacity:0.26;isolation:isolate;}</style></defs><title>Untitled-1</title><path id="Path_84" data-name="Path 84" class="cls-1" d="M315,60.47c2.16,90.36,63.9,51.29,110.6,66.5s41.36,57.4,49.13,80.07,38.37,23.49,38.37,23.49V60.47Z" transform="translate(-314.95 -60.47)"/></svg>
+    </div>
+    <div class="svg">
+        <svg id="two" data-name="two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.09 170.06"><defs><style>.cls-2{fill:#4781c3;opacity:0.2;isolation:isolate;}</style></defs><title>Untitled-1</title><path id="Path_83" data-name="Path 83" class="cls-2" d="M478.81,610.3c-2.15-90.36-63.9-51.29-110.6-66.5s-41.36-57.4-49.12-80.07-38.37-23.49-38.37-23.49V610.3Z" transform="translate(-280.72 -440.24)"/></svg>
+    </div>
+
+    <div class="spacer-h-lg"></div>
+    <main class="centered">
+        <section class="form-wrap">
+            <h1 class="title c-blue dmserif">Advance Peace</h1>
+            <form id="signinForm">
+            <div class="input-icon">
+              <input type="text" id="emailInputSignin" placeholder="Email" required> <br/>
+              <i class='fas fa-user-circle'></i>
+            </div>
+            <div class="input-icon">
+              <input type="password" id="passwordInputSignin" placeholder="Password" pattern=".*" required> <br/>
+              <i class="fas fa-lock"></i>
+            </div>
+            <a href="pw-reset.html">Forgot password ></a> <br/>
+            <div class="centered">
+              <input type="submit" value="Sign in">
+            </div>
+            </form>
+        </section>
+    </main>  
+    
+    <!-- dependencies -->
+    <script src="https://kit.fontawesome.com/0145313c67.js" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/configs/jwt-decode.min.js"></script>
+    <script src="js/configs/config.js"></script>
+    <script src="js/configs/cognito-auth.js"></script>
+    <!-- scripts -->
+    <script src="js/master.js"></script>
+    <script src="js/signin.js"></script>
+</body>
+</html>
