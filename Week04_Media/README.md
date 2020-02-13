@@ -2,6 +2,9 @@
 
 ### 1. Design the way you want your website to look (Sketch / Illustrator / Hand Drawing ... )
 
+
+<img src="images/sign-in.png" width="100px"/>
+
 ![signin](images/sign-in.png)
 ![nca home](images/nca-home.png)
 ![new entry](images/new-entry.png)
