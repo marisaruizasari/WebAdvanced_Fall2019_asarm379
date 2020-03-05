@@ -1,0 +1,25 @@
+
+
+body {
+    padding: 50px;
+}
+#heading-title {
+    font-family: 'Damion', cursive;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#met-objects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 20px;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-family: 'Gudea', sans-serif;
+}
