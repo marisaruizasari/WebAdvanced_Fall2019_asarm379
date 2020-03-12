@@ -79,7 +79,7 @@ function addToListOfItems(object) {
         let imgUrl = object.primaryImage;
         let img = document.createElement('img')
         img.src = imgUrl
-        img.style.width = "300px"
+        img.style.height = "300px"
 
         container.appendChild(title)
         container.appendChild(img)
