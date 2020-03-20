@@ -110,10 +110,10 @@ When a user navigates to a project page, the page is filled out dynamically from
 
 The site is responsive and mobile friendly. Projects wrap and center on mobile view, so that projects stack in one column. The quickview is moved to the bottom half of the screen instead of to the right or left of the project on click. The about section also wraps and centers its content.
 
-<img src="readme-images/mobile-home.png" style="height: 400px">
-<img src="readme-images/mobile-hover.png" style="height: 400px">
-<img src="readme-images/mobile-project.png" style="height: 400px">
-<img src="readme-images/mobile-about.png" style="height: 400px">
+<img src="readme-images/mobile-home.png" height="400px">
+<img src="readme-images/mobile-hover.png" height="400px">
+<img src="readme-images/mobile-project.png" height="400px">
+<img src="readme-images/mobile-about.png" height="400px">
 
 ### Challenges
 
