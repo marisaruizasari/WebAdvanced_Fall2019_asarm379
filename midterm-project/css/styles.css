@@ -99,6 +99,8 @@ svg {
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #work {
@@ -215,7 +217,8 @@ svg {
 }
 
 #qv-logo {
-    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
     bottom: 40px;
     padding: 20px;
     font-size: 70px;
@@ -238,7 +241,6 @@ svg {
 
 #qv-content {
     padding: 20px 50px;
-    position: relative;
 }
 
 #quickview h3 {
@@ -255,7 +257,7 @@ svg {
 }
 
 #about-content {
-    width: 75%;
+    flex-basis: 50%;
 }
 
 #about h3 {
@@ -335,6 +337,7 @@ margin-top: 0;
   #about-img-container {
       display: flex;
       flex-direction: column;
+      flex-basis: 20%;
   }
 
   /* project pages */
@@ -419,6 +422,10 @@ margin-top: 0;
     #qv-logo {
         visibility: hidden;
     }
+    #about {
+        justify-content: center;
+    }
+
 }
 
 
@@ -455,6 +462,10 @@ margin-top: 0;
         font-size: 150px;
     }
 
+    #about-content {
+        flex-basis: 100%;
+    }
+    
 }
 
 @media (max-width: 950px) {
